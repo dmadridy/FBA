@@ -4,13 +4,13 @@ import linkedin from '../assets/icons/linkedin.png';
 
 const Footer = () => {
   return (
-    <footer className='py-12 border-t border-neutral-800'>
+    <footer className='py-12 border-t border-neutral-800 bg-neutral-900'>
       <div className='container mx-auto max-w-7xl md:flex justify-between space-y-8 md:space-y-0'>
         <div className='flex text-neutral-400 text-sm justify-center'>
           <p>© 2023 David Madrid</p>
         </div>
         <div className='space-x-6 flex justify-center'>
-          <a href='https://github.com/DavidMadridYepez' target='_blank'>
+          <a href='https://github.com/dmadridy' target='_blank'>
             <img className='w-5' src={github} alt='' />
           </a>
           <a href='https://www.instagram.com/dmadridy/' target='_blank'>
