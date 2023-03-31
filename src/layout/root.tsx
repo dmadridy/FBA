@@ -4,11 +4,11 @@ import Header from './header';
 
 const Root = () => {
   return (
-    <>
+    <div>
       <Header />
       <Outlet />
       <Footer />
-    </>
+    </div>
   );
 };
 
