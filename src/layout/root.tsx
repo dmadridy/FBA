@@ -4,7 +4,7 @@ import Header from './header';
 
 const Root = () => {
   return (
-    <div>
+    <div className='bg-slate-900 text-white'>
       <Header />
       <Outlet />
       <Footer />
