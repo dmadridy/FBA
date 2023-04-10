@@ -2,10 +2,8 @@ import github from '../assets/icons/github.png';
 import instagram from '../assets/icons/instagram.png';
 import linkedin from '../assets/icons/linkedin.png';
 import { useSelector } from 'react-redux';
-import { selectCount } from '../components/counter/counter-slice';
 
 const Footer = () => {
-  const count = useSelector(selectCount);
   return (
     <footer className='py-12 border-t border-neutral-800 bg-neutral-900'>
       <div className='container mx-auto max-w-7xl md:flex justify-between space-y-8 md:space-y-0'>
