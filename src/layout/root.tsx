@@ -4,7 +4,7 @@ import Header from './header';
 
 const Root = () => {
   return (
-    <div className='bg-gray-900 text-white'>
+    <div className='flex flex-col justify-between h-screen bg-gray-900 text-white'>
       <Header />
       <Outlet />
       <Footer />
