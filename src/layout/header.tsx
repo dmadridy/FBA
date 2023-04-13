@@ -1,13 +1,14 @@
 import { Link, NavLink } from 'react-router-dom';
 import { activeStyle, unactiveStyle } from '../assets/styles';
+import logo from '../assets/icons/Logo.png';
 
 const Header = () => {
   return (
     <div className='border-b border-gray-600'>
       <div className='border-t-4 border-indigo-300'></div>
-      <div className='container max-w-7xl flex justify-between mx-auto items-center py-6'>
-        <Link className='' to='/'>
-          Logo
+      <div className='container max-w-7xl flex justify-between mx-auto items-center py-4'>
+        <Link className='w-12' to='/'>
+          <img src={logo} alt='' />
         </Link>
         <div className='space-x-8'>
           <NavLink
