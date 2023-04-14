@@ -14,11 +14,11 @@ const Projects = () => {
         <a href='https://armcare.com/' target='_blank'>
           <div className={projectsBoxStyle}>
             <img className='w-8 h-8' src={armcare} alt='' />
-            <div className='mt-4'>
+            <div className='mt-4 space-y-2'>
+              <p className='text-white font-medium text-lg'>ArmCare</p>
               <p className='text-sm text-gray-300'>
-                <span className='text-white font-medium text-lg'>ArmCare</span>{' '}
-                <br />
-                Platform that provides movie browsing and discovering.
+                Data-Led Monitoring and Individualized Training Platform to
+                Better Prepare Throwing Athletes for Competition.
               </p>
             </div>
             <p className='mt-4'>armcare.com</p>
@@ -27,11 +27,11 @@ const Projects = () => {
         <a href='https://www.remitly.com/us/es/colombia' target='_blank'>
           <div className={projectsBoxStyle}>
             <img className='w-8 h-8' src={remitlywhite} alt='' />
-            <div className='mt-4'>
+            <div className='mt-4 space-y-2'>
+              <p className='text-white font-medium text-lg'>Remitly</p>
               <p className='text-sm text-gray-300'>
-                <span className='text-white font-medium text-lg'>Remitly</span>{' '}
-                <br />
-                Platform that provides movie browsing and discovering.
+                We are united through our mission - to tirelessly deliver on our
+                promise to immigrants sending money across the world.
               </p>
             </div>
             <p className='mt-4'>remitly.com</p>
@@ -40,11 +40,11 @@ const Projects = () => {
         <a href='https://fithub.com.co/stores/market/' target='_blank'>
           <div className={projectsBoxStyle}>
             <img className='w-8 h-8' src={fithub} alt='' />
-            <div className='mt-4'>
+            <div className='mt-4 space-y-2'>
+              <p className='text-white font-medium text-lg'>Fithub</p>
               <p className='text-sm text-gray-300'>
-                <span className='text-white font-medium text-lg'>Fithub</span>{' '}
-                <br />
-                Platform that provides movie browsing and discovering.
+                We specialize in healthy foods, supplements, and personal care
+                products, adding value through technology.
               </p>
             </div>
             <p className='mt-4'>fithub.com.co</p>
@@ -53,11 +53,12 @@ const Projects = () => {
         <a href='https://rmd-rouge.vercel.app/' target='_blank'>
           <div className={projectsBoxStyle}>
             <img className='w-8 h-8' src={rmd} alt='' />
-            <div className='mt-4'>
+            <div className='mt-4 space-y-2'>
+              <p className='text-white font-medium text-lg'>RMDB</p>
               <p className='text-sm text-gray-300'>
-                <span className='text-white font-medium text-lg'>RMDB</span>{' '}
-                <br />
-                Platform that provides movie browsing and discovering.
+                Search and discover the latest and top rated movies. See
+                detailed information related credits, reviews, and finantial
+                data.
               </p>
             </div>
             <p className='mt-4'>rmd-rouge.vercel.app</p>

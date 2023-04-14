@@ -11,7 +11,7 @@ const Home = () => {
         I'm David, a frontend engineer based in
         <span className='text-indigo-300 font-medium'> Medellin</span> co.{' '}
       </p>
-      <button className='mt-8 p-2 hover:bg-gray-200 duration-200 bg-white rounded text-indigo-600 font-medium'>
+      <button className='mt-8 p-2 duration-200 bg-white rounded text-indigo-600 font-medium hover:scale-105'>
         Download CV
       </button>
     </div>
