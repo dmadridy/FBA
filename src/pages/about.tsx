@@ -1,8 +1,7 @@
 const About = () => {
   return (
-    <div className='container mx-auto max-w-7xl'>
-      <h1>Hi!</h1>
-      <p>Im David, a frontend engineer based on Medellin</p>
+    <div className='container mx-auto max-w-7xl py-12 text-center'>
+      <h1 className='mt-4 text-4xl font-medium'>Comming soon...</h1>
     </div>
   );
 };
