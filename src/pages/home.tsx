@@ -2,7 +2,7 @@ import mypicture from '../assets/images/picture.jpeg';
 
 const Home = () => {
   return (
-    <div className='mx-auto container text-center max-w-7xl py-32'>
+    <div className='mx-auto container text-center max-w-7xl py-32 px-4'>
       <div className='flex justify-center'>
         <img className='rounded-full w-16' src={mypicture} alt='' />
       </div>
