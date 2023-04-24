@@ -2,7 +2,7 @@ import mypicture from '../assets/images/picture.jpeg';
 
 const Home = () => {
   return (
-    <div className='mx-auto container text-center max-w-7xl py-32'>
+    <div className='mx-auto container text-center max-w-7xl py-32 px-4'>
       <div className='flex justify-center'>
         <img className='rounded-full w-16' src={mypicture} alt='' />
       </div>
@@ -12,7 +12,12 @@ const Home = () => {
         <span className='text-indigo-300 font-medium'> Medellin</span> co.{' '}
       </p>
       <button className='mt-8 p-2 duration-200 bg-white rounded text-indigo-600 font-medium hover:scale-105'>
-        Download CV
+        <a
+          target='_blank'
+          href='https://drive.google.com/file/d/1EVXS5eAc3xqGpWW6WjCbRyNBYAV9St5k/view?usp=sharing'
+        >
+          Download CV
+        </a>
       </button>
     </div>
   );

@@ -6,11 +6,11 @@ import { projectsBoxStyle } from '../assets/styles';
 
 const Projects = () => {
   return (
-    <div className='max-w-7xl mx-auto container py-12'>
+    <div className='max-w-7xl mx-auto container py-12 px-4 xl:px-0'>
       <h1 className='text-center mb-12 text-4xl font-medium'>
         Some of the projects <br /> I've worked on.
       </h1>
-      <div className='grid grid-cols-3 gap-4'>
+      <div className='grid sm:grid-cols-2 xl:grid-cols-3 gap-4'>
         <a href='https://armcare.com/' target='_blank'>
           <div className={projectsBoxStyle}>
             <img className='w-8 h-8' src={armcare} alt='' />
