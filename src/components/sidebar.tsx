@@ -1,10 +1,11 @@
 import { Menu, Transition } from '@headlessui/react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { activeSidebar, unactiveSidebar } from '../assets/styles';
 
 const Sidebar = () => {
   return (
-    <Menu as='div' className='w-56 text-right md:hidden'>
-      <Menu.Button className='inline-flex justify-center rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white'>
+    <Menu as='div' className='w-56 text-right md:hidden z-20'>
+      <Menu.Button className='inline-flex justify-center rounded-md bg-black bg-opacity-20 px-4 py-2 font-medium text-white'>
         Menu
       </Menu.Button>
       <Transition
@@ -15,18 +16,41 @@ const Sidebar = () => {
         leaveFrom='transform scale-100 opacity-100'
         leaveTo='transform scale-95 opacity-0'
       >
-        <Menu.Items className='text-left flex p-4 bg-gray-700 flex-col absolute w-full right-0 mt-2 space-y-2 rounded-md shadow-lg'>
+        <Menu.Items className='text-left flex p-4 bg-gray-800 flex-col absolute w-full right-0 mt-2 space-y-2 rounded-md shadow-lg'>
           <Menu.Item>
-            <Link to='/about'>About</Link>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? activeSidebar : unactiveSidebar
+              }
+              to='/about'
+            >
+              About
+            </NavLink>
           </Menu.Item>
           <Menu.Item>
-            <Link to='/blog'>Blog</Link>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? activeSidebar : unactiveSidebar
+              }
+              to='/blog'
+            >
+              Blog
+            </NavLink>
           </Menu.Item>
           <Menu.Item>
-            <Link to='/projects'>Projects</Link>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? activeSidebar : unactiveSidebar
+              }
+              to='/projects'
+            >
+              Projects
+            </NavLink>
           </Menu.Item>
           <Menu.Item>
-            <a href='mailto:davidmadridpathway@gmail.com'>Get in touch</a>
+            <div className='font-medium bg-indigo-700 p-3 text-center rounded'>
+              <a href='mailto:davidmadridpathway@gmail.com'>Get in touch</a>
+            </div>
           </Menu.Item>
         </Menu.Items>
       </Transition>
